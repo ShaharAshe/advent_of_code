@@ -35,7 +35,6 @@ int count_floars(std::ifstream& input_file){
 
     while (input_file >> read_char_parenthesis)
     {
-        std::cout << "8" << std::endl;
         switch (read_char_parenthesis)
         {
         case '(':++floar_number;
@@ -46,7 +45,6 @@ int count_floars(std::ifstream& input_file){
         default:
             break;
         }
-        std::cout << "7" << std::endl;
     }
     
     return floar_number;
